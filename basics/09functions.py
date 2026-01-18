@@ -80,6 +80,16 @@ def myFun(*args, **kwargs):
 myFun('Hey', 'Welcome', first='Geeks', mid='for', last='Geeks')
 
 
+def demo(*args, **kwargs):
+  print(args)
+  print(kwargs)
+  print(type(args))
+  print(type(kwargs))
+
+demo('Good',1,2,x=2,y=4)
+
+
+
 # Function within Functions
 # A function defined inside another function is called an inner function (or nested function). 
 # It can access variables from the enclosing function’s scope and is often used to keep logic protected and organized.
